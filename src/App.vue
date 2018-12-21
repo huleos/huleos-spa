@@ -1,24 +1,15 @@
 <template>
   <div id="app">
-    <div class="o-container">
-      <div class="o-row o-flex o-flex--center">
-
-        <HelloWorld msg="Welcome to Your Vue.js App | Jelou"/>
-        <Intro />
-        
-      </div>
-    </div>
+    <Intro />        
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Intro from './components/Intro.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
     Intro
   }
 }

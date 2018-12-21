@@ -1,22 +1,33 @@
 <template>
-	<div class="c-intro">
-		<div class="c-intro__head">
-			<a href="tel:+5216862101600" class="c-intro__head--link">+52 1 686 210 1600</a>
-			<span>•</span>
-			<a href="mailto:hey@huleos.com?subject=Hello%20huleos" class="c-intro__head--link">hey@huleos.com</a>
-		</div>
-	  <div class="o-container--md u-pt2">
-	    <a href="/" class="c-intro__brand">huleos</a>
-	    <h2 class="c-intro__title">Front-End Developer</h2>
-	    <p class="c-intro__text">html + css + javascript</p>
-	  </div>
-	  <div class="c-profile-avatar">
-			<a href="" class="c-profile-avatar--link">
-				<img src="/assets/images/huleos.jpg" alt="" class="c-profile-avatar--img">
-			</a>
-		</div>
-	</div>
+  <div class="c-intro">
+    <div class="c-intro__head">
+      <a href="tel:+5216862101600" class="c-intro__head--link">+52 1 686 210 1600</a>
+      <span>•</span>
+      <a href="mailto:hey@huleos.com?subject=Hello%20huleos" class="c-intro__head--link">hey@huleos.com</a>
+    </div>
+    <div class="o-container--md u-pt2">
+      <a href="/" class="c-intro__brand">huleos</a>
+      <h2 class="c-intro__title">Front-End Developer</h2>
+      <p class="c-intro__text">html + css + javascript</p>
+    </div>
+    <div class="c-profile-avatar">
+      <a href="" class="c-profile-avatar--link">
+        <img :src="`${baseUrl}images/huleos.jpg`" alt="huleos Front-End Developer" class="c-profile-avatar--img">
+      </a>
+    </div>
+  </div>
 </template>
+
+<script>
+export default {
+  name: 'Intro',
+  data () {
+    return {
+      baseUrl: process.env.BASE_URL
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 
@@ -80,7 +91,7 @@
     line-height: 1;
     text-transform: uppercase;
     @include breakpoint(md) {
-    	font-size: rem(42);
+      font-size: rem(42);
     }
   }
 
@@ -90,8 +101,8 @@
     text-transform: uppercase;
     letter-spacing: rem(6);
     @include breakpoint(md) {
-    	font-size: rem(18);
-    	letter-spacing: rem(10);
+      font-size: rem(18);
+      letter-spacing: rem(10);
     }
   }
   
