@@ -2,5 +2,9 @@
 @import "~huleos.css/scss/tools/tools.rem";
 @import "~huleos.css/scss/tools/tools.breakpoints";
 
-// Example
-$salmon: #fa8072;
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,400,600');
+
+$body-font-family: 'Nunito', sans-serif;
+$header-font-family: $body-font-family;
+
+$global-radius: 5px;
