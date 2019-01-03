@@ -3956,10 +3956,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-huleos.css@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/huleos.css/-/huleos.css-0.0.9.tgz#9bfd78f90fced76ea89ad2e657832a62b291799f"
-  integrity sha512-4JJsPX2mAXMQvGippr6gDvtk8xcnK1y6C4yVGIZYDpeE1Q3+bvAoi4Uks0OM4KiHsZGuz5b8zqQF90acQRY8Sg==
+huleos.css@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/huleos.css/-/huleos.css-0.1.0.tgz#2e6159b8727a31e653ee1fd1ca5433902453341a"
+  integrity sha512-b7DfYXUtjY/8p3B6TsRHmD2xWl0IMQSYKAniqEg6jOGt/mv2enaek58wFPKHiqaQtuxKZG++S9TH4fCG6qi2Bw==
 
 iconv-lite@0.4.23:
   version "0.4.23"
