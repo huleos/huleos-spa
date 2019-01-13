@@ -5,7 +5,7 @@
       <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
 
       <div class="o-row o-flex o-flex--center u-text--left u-mt2">
-        <form name="contact" 
+        <!-- <form name="contact" 
               method="POST"
               action="/" 
               data-netlify="true"
@@ -19,7 +19,18 @@
           <input type="email" name="email" class="c-form-input" placeholder="Your email address" required>
           <textarea name="message" cols="30" rows="5" class="c-form-input" placeholder="Your message" required></textarea>
           <button type="submit" class="c-contact__cta">Submit</button>
-        </form>
+        </form> -->
+        <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
       </div>
 
     </div>
