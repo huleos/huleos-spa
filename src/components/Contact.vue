@@ -15,8 +15,8 @@
           <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
-          <input type="text" class="c-form-input" placeholder="Your name" required>
-          <input type="email" class="c-form-input" placeholder="Your email address" required>
+          <input type="text" name="name" class="c-form-input" placeholder="Your name" required>
+          <input type="email" name="email" class="c-form-input" placeholder="Your email address" required>
           <textarea name="message" cols="30" rows="5" class="c-form-input" placeholder="Your message" required></textarea>
           <button type="submit" class="c-contact__cta">Submit</button>
         </form>
