@@ -8,7 +8,8 @@
         <form name="contact" 
               method="POST"
               data-netlify="true"
-              netlify-honeypot="bot-field" 
+              netlify-honeypot="bot-field"
+              netlify 
               class="form--contact">
           <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -19,8 +20,7 @@
           <button type="submit" class="c-contact__cta">Submit</button>
         </form>
       </div>
-
-      <!-- <a href="mailto:hey@huleos.com?subject=Hello%20huleos" class="c-contact__cta">Email Me <span class="arrow-right">&#8594;</span></a> -->
+      
     </div>
   </div>
 </template>
