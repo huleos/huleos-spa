@@ -1,0 +1,9 @@
+::-moz-selection { /* Code for Firefox */
+    color: map-get($brand-color, primary);
+    background: $black;
+}
+
+::selection {
+    color: map-get($brand-color, primary); 
+    background: $black;
+}

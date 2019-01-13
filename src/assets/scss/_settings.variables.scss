@@ -1,0 +1,19 @@
+// GLOBAL
+
+$body-font-family: 'Nunito', sans-serif;
+$header-font-family: $body-font-family;
+$header-font-weight: bold;
+
+$global-radius: 5px;
+
+// ABOUT
+$about-text-color: #545454;
+$about-bg-color: #f1f1f1;
+
+$brand-color:(
+	primary: #2ce28a,
+	secondary: #00d0da,
+	success: #5cb85c,
+	warning: #ffae00,
+	danger:   #f1391c,
+);

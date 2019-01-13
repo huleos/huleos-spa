@@ -1,16 +1,14 @@
+@charset "UTF-8";
+
+// huleos.css
+@import "~huleos.css/scss/settings/settings.global";
 @import "~huleos.css/scss/settings/settings.colors";
 @import "~huleos.css/scss/tools/tools.rem";
 @import "~huleos.css/scss/tools/tools.breakpoints";
 
+// This Project
 @import url('https://fonts.googleapis.com/css?family=Nunito:200,400,600');
-
-// GLOBAL
-$body-font-family: 'Nunito', sans-serif;
-$header-font-family: $body-font-family;
-$header-font-weight: bold;
-
-$global-radius: 5px;
-
-// ABOUT
-$about-text-color: #545454;
-$about-bg-color: #f1f1f1;
+@import "settings.variables";
+@import "settings.selection";
+@import "components.social";
+@import "components.title";

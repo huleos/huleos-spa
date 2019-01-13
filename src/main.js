@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './../node_modules/huleos.css/scss/style.scss'
+import './../node_modules/huleos.css/scss/huleos.scss'
 
 Vue.config.productionTip = false
 

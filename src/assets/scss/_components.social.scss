@@ -1,0 +1,16 @@
+.c-social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+  &__item {
+    padding-left: rem(10);
+    padding-right: rem(10);
+    color: $white;
+    &:hover {
+      text-decoration: line-through;
+    }
+    
+    &.linkedin { color: #0077b5; }
+  }
+}
