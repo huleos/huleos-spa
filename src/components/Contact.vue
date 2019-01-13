@@ -7,6 +7,7 @@
       <div class="o-row o-flex o-flex--center u-text--left u-mt2">
         <form name="contact" 
               method="POST"
+              action="/success" 
               data-netlify="true"
               netlify-honeypot="bot-field"
               class="form--contact">
