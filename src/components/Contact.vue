@@ -5,20 +5,20 @@
       <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
 
       <div class="o-row o-flex o-flex--center u-text--left u-mt2">
-        <form name="contact" 
-              method="POST"
-              action="/success" 
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              class="form--contact">
-          <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-          <input type="text" name="name" class="c-form-input" placeholder="Your name" required>
-          <input type="email" name="email" class="c-form-input" placeholder="Your email address" required>
-          <textarea name="message" cols="30" rows="5" class="c-form-input" placeholder="Your message" required></textarea>
-          <button type="submit" class="c-contact__cta">Submit</button>
-        </form>
+        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  <p>
+    <label>Email: <input type="text" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type=”submit”>Send</button>
+  </p>
+</form>
       </div>
 
     </div>
