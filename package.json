@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "huleos.css": "^0.1.1",
-    "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
