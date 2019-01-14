@@ -6,13 +6,13 @@
 
       <div class="o-row o-flex o-flex--center u-text--left u-mt2">
         <form name="contact" 
-              method="POST"
-              netlify
+              action="" 
+              method="post"
               netlify-honeypot="bot-field"
+              netlify
               class="form--contact">
-          <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
+          <input type="hidden" name="form-name" value="contact" />
+          <label class="hidden">Don’t fill this out if you're human: <input name="bot-field" /></label>
           <input type="text" name="name" class="c-form-input" placeholder="Your name" required>
           <input type="email" name="email" class="c-form-input" placeholder="Your email address" required>
           <textarea name="message" cols="30" rows="5" class="c-form-input" placeholder="Your message" required></textarea>
