@@ -1,9 +1,9 @@
 <template>
   <div class="c-intro">
     <div class="c-intro__head">
-      <a href="tel:+5216862101600" class="c-intro__head--link">+52 1 686 210 1600</a>
+      <!-- <a href="tel:+5216862101600" class="c-intro__head--link">+52 1 686 210 1600</a>
       <span>•</span>
-      <a href="mailto:hey@huleos.com?subject=Hello%20huleos" class="c-intro__head--link">hey@huleos.com</a>
+      <a href="mailto:hey@huleos.com?subject=Hello%20huleos" class="c-intro__head--link">hey@huleos.com</a> -->
     </div>
     <div class="o-container--md u-pt2">
       <a href="/" class="c-intro__brand">huleos</a>
@@ -34,12 +34,13 @@ export default {
 // Intro
 .c-intro {
   color: $white;
-  background-color: #2B2A2A;
+  // background-color: #2B2A2A;
   text-align: center;
   
   &__head {
     background-image: linear-gradient(141deg, #00d0da 0%, #23d160 71%, #2ce28a 100%);
     text-align: center;
+    height: rem(6);
     &--link {
       color: $white;
       display: inline-block;
@@ -111,6 +112,7 @@ export default {
 // Profile Avatar
 .c-profile-avatar {
   position: relative;
+  z-index: 2;
   background-color: $white;
   border: 5px solid $white;
   border-radius: 50%;

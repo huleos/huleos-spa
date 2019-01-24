@@ -1,26 +1,28 @@
 <template>
-	<div class="c-contact u-py3">
-    <div class="o-container--md">
-      <h2 class="c-title">Interested in doing a project together?</h2>
-      <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
+  <div class="o-container">
+  	<div class="c-contact u-pt4 u-pb3">
+      <div class="o-container--md">
+        <h2 class="c-title">Interested in doing a project together?</h2>
+        <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
 
-      <div class="o-row o-flex o-flex--center u-text--left u-mt2">
-        <form name="contact" 
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              class="form--contact">
+        <div class="o-row o-flex o-flex--center u-text--left u-mt2">
+          <form name="contact" 
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                class="form--contact">
 
-          <input type="hidden" name="form-name" value="contact" />
-          <label class="hidden">Don’t fill this out if you're human: <input name="bot-field" /></label>
-          
-          <input type="text" name="name" class="c-form-input" placeholder="Your name" required>
-          <input type="email" name="email" class="c-form-input" placeholder="Your email address" required>
-          <textarea name="message" cols="30" rows="5" class="c-form-input" placeholder="Your message" required></textarea>
-          <button type="submit" class="c-contact__cta">Submit</button>
-        </form>
+            <input type="hidden" name="form-name" value="contact" />
+            <label class="hidden">Don’t fill this out if you're human: <input name="bot-field" /></label>
+            
+            <input type="text" name="name" class="c-form-input" placeholder="Your name" required>
+            <input type="email" name="email" class="c-form-input" placeholder="Your email address" required>
+            <textarea name="message" cols="30" rows="5" class="c-form-input" placeholder="Your message" required></textarea>
+            <button type="submit" class="c-contact__cta">Submit</button>
+          </form>
+        </div>
+
       </div>
-
     </div>
   </div>
 </template>
@@ -34,9 +36,11 @@ $contatc-bg-color: #f1f1f1;
   background-color: $contatc-bg-color;
   text-align: center;
   font-size: rem(20);
+  border-radius: $global-radius;
+  box-shadow: rem(-15) 0 rem(45) $black;
   
   &__cta {
-    border-radius: 5px;
+    border-radius: rem(30);
     border: $cta-border;
     color: $cta-color;
     padding: rem(15) rem(24);
@@ -56,11 +60,19 @@ $contatc-bg-color: #f1f1f1;
 }
 
 .form--contact {
-  flex: 0 0 calc(100% - 32px;
-  max-width: calc(100% - 32px;
+  flex: 0 0 calc(100% - 32px);
+  max-width: calc(100% - 32px);
   @include breakpoint(md) {
     flex: 0 0 calc(60% - 32px);
     max-width: calc(60% - 32px);
+  }
+  .c-form-input {
+    border-radius: rem(30);
+    padding: rem(15);
+    border-width: rem(2);
+    &:focus {
+      border-color: #01d5c7;
+    }
   }
 }
 

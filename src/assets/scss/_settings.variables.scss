@@ -4,10 +4,12 @@ $body-font-family: 'Nunito', sans-serif;
 $header-font-family: $body-font-family;
 $header-font-weight: bold;
 
-$global-radius: 5px;
+$global-radius: rem(16);
+
+$body-bg: #1a1915;
 
 // ABOUT
-$about-text-color: #545454;
+$about-text-color: $white;
 $about-bg-color: #f1f1f1;
 
 $brand-color:(
