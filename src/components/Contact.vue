@@ -28,15 +28,16 @@
 </template>
 
 <style lang="scss" scoped>
-$cta-color: map-get($brand-color, primary) !default;
-$cta-border: 2px solid map-get($brand-color, primary) !default;
 $contatc-bg-color: #f1f1f1;
+$cta-color: $contatc-bg-color;
+$cta-bg: map-get($brand-color, primary);
+$cta-border: 2px solid map-get($brand-color, primary);
 
 .c-contact {
   background-color: $contatc-bg-color;
   text-align: center;
   font-size: rem(20);
-  border-radius: $global-radius;
+  border-radius: $section-radius;
   box-shadow: rem(-15) 0 rem(45) $black;
   
   &__cta {
@@ -51,10 +52,9 @@ $contatc-bg-color: #f1f1f1;
     margin-bottom: rem(15);
     min-width: rem(160);
     transition: all .25s ease;
-    background: transparent;
+    background: $cta-bg;
     &:hover {
-      transform: scale(1.025);
-      opacity: .4;
+      box-shadow: 0 rem(10) rem(40) 0 rgba(62,57,107,.2), 0 rem(2) rem(9) 0 rgba(62,57,107,.2);
     }
   }
 }
