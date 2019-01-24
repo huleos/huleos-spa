@@ -1,6 +1,6 @@
 <template>
   <div class="o-container">
-  	<div class="c-contact u-pt4 u-pb3">
+    <div class="c-contact u-pt4 u-pb3">
       <div class="o-container--md">
         <h2 class="c-title">Interested in doing a project together?</h2>
         <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
